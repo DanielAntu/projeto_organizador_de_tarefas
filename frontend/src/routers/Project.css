@@ -1,0 +1,46 @@
+.project .header {
+    display: flex;
+    border-bottom: 1px solid #000;
+    justify-content: space-between;
+}
+
+.project .header .name-project {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-right: 1px solid #000;
+    padding: 10px;
+    font-size: 19px;
+    width: 400px;
+}
+
+.project .header .name-project .past {
+    font-size: 30px;
+}
+
+.project .header .create-todo {
+    padding: 10px;
+    width: 100%;
+}
+
+.project .header .create-todo form {
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.project .header .create-todo form input {
+    width: 100%;
+}
+
+.project-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-area h2 {
+    text-align: center;
+    padding: 10px;
+}

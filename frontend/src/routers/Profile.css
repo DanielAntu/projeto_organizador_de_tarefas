@@ -1,0 +1,13 @@
+.profile h2 {
+    margin-bottom: 10px;
+}
+
+.profile form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.profile form .form-control {
+    flex: 0 0 49%;
+}

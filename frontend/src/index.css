@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-bottom: 20px;
+}
+
+.center {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 5px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 10px;
+    background-color: #0cab03;
+    color: #fff;
+    border: 1px solid #0cab03;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.btn-register:hover {
+    background-color: #fff;
+    color: #0cab03;
+}
+
+.btn-register:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.buttons-action {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.action {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.action span {
+    display: none;
+}
+
+.action:hover span {
+    display: inline-block;
+}
+
+.action:hover {
+    color: #0cab03;
+}
