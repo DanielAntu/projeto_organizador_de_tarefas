@@ -58,9 +58,10 @@ const Project = () => {
                     },
                 }
             );
-            todo.description = res.data.todos.find(
-                (todoRes) => todoRes.id == todo.id
-            ).description;
+
+            setNotInit(res.data.todos.filter((todo) => todo.notInit));
+            setDoing(res.data.todos.filter((todo) => todo.doing));
+            setFinished(res.data.todos.filter((todo) => todo.finish));
 
             setIdShow("");
             setName("");

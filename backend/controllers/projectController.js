@@ -494,9 +494,22 @@ const copyTodo = async (req, res) => {
             return;
         }
 
+        const description = todo.description;
+        const todoDesc = todos.filter((todo) =>
+            todo.description.includes(description)
+        );
+
+        let desc = "";
+
+        if (todoDesc.length > 1) {
+            desc = `${description} copy (${todoDesc.length - 1})`;
+        } else {
+            desc = `${description} copy`;
+        }
+
         const todoObj = {
             id: createId(todos),
-            description: todo.description,
+            description: desc,
             notInit: true,
             doing: false,
             finish: false,
